@@ -48,10 +48,10 @@
 ![image](../images/Median_and_mean_CR_2018.png)
 
 ### 2019
-![image]()
+![image](../images/Median_and_mean_CR_2019.png)
 
 ### 2020 
-![image]()
+![image](../images/Median_and_mean_CR_2020.png)
 
 
 
