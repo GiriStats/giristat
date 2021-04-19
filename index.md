@@ -6,3 +6,4 @@
 - [Тяжелые спортсмены поднимают больше? (ДЦ)](https://alekseidudchenko.github.io/giristat/pages/weightcategoris)
 - [Ошибки в протоколах](https://alekseidudchenko.github.io/giristat/pages/errors_in_protocols)
 - [Чемпионаты федеральных округов: Кто больше?]()
+- [Что по нормативам?]()
