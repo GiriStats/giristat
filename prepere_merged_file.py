@@ -33,8 +33,13 @@ def get_df():
 
     # merge datasets
     df = df_lc.append(df_bi, sort=False)
+    
     df['name'] = df['Ф.И.'].apply(lambda x: str.strip(x))
     df['ФИО тренера(тренеров)'] = df['ФИО тренера(тренеров)'].astype(str)
     df['ФИО тренера(тренеров)'] = df['ФИО тренера(тренеров)'].apply(lambda x: str.strip(x))
     df['vk'] = df['в/к'].apply(lambda x: str(x))
+
+    df.loc[(df['Год'] == 2017) & (df['vk']=='999'), 'vk'] = "95+"
+    df.loc[(df['Год'] != 2017) & (df['vk']=='999'), 'vk'] = "85+"
+
     return df
