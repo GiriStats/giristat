@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
-import prepere_merged_file as pf
+PACKAGE_PARENT = '..'
+from prepere_merged_file import get_df 
 
 df=pf.get_df()
 
@@ -11,7 +12,7 @@ df2017_73 = df2017[df2017['в/к']==73]
 df2017_78 = df2017[df2017['в/к']==78]
 df2017_85 = df2017[df2017['в/к']==85]
 df2017_95 = df2017[df2017['в/к']==95]
-df2017_999 = df2017[df2017['в/к']==999]
+df2017_95p = df2017[df2017['в/к']==999]
 
 median_2017_63 = df2017_63['Толчок ДЦ'].median()
 mean_2017_63 = df2017_63['Толчок ДЦ'].mean()
@@ -31,8 +32,8 @@ mean_2017_85 = df2017_85['Толчок ДЦ'].mean()
 median_2017_95 = df2017_95['Толчок ДЦ'].median()
 mean_2017_95 = df2017_95['Толчок ДЦ'].mean()
 
-median_2017_999 = df2017_999['Толчок ДЦ'].median()
-mean_2017_999 = df2017_999['Толчок ДЦ'].mean()
+median_2017_999 = df2017_95p['Толчок ДЦ'].median()
+mean_2017_999 = df2017_95p['Толчок ДЦ'].mean()
 
 medians2017 = [median_2017_63, median_2017_68, median_2017_73, median_2017_78, median_2017_85, median_2017_95, median_2017_999]
 means2017 = [mean_2017_63, mean_2017_68, mean_2017_73, mean_2017_78, mean_2017_85, mean_2017_95, mean_2017_999]
